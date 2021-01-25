@@ -1,0 +1,407 @@
+/* ============================================================================================
+                  Colors And Font Details
+
+                  Blue      -       #00529C
+                  Black     -       #041423
+                  Gray      -       #7E878F
+                  Semi-Gray -       #D9E0E6
+                  White     -       #F6F7F8 
+
+                  Font      -       Rubik
+============================================================================================ */
+body {
+  line-height: 1.6;
+  font-size: 17.6px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #041423;
+  background: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #041423;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ============================================================================================
+                  Global Styles ( Button , Bold Text , Bold Link  )
+============================================================================================ */
+.primary-btn {
+  position: relative;
+  display: inline-block;
+  background: #00529c;
+  line-height: 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+.primary-btn:before {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #fff;
+  z-index: -1;
+  border-radius: 50px;
+  transform: skew(-80deg, 45deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.primary-btn:hover {
+  color: #fff;
+}
+.primary-btn:hover:before {
+  right: -10%;
+  width: 120%;
+  opacity: 0.5;
+  visibility: visible;
+}
+/*=============================== White button */
+.primary-btn-white {
+  position: relative;
+  display: inline-block;
+  background: #f6f7f8;
+  line-height: 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #041423;
+  padding: 0px 20px;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid #041423;
+}
+.primary-btn-white:before {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #00529c;
+  z-index: -1;
+  border-radius: 50px;
+  transform: skew(-80deg, 45deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.primary-btn-white:hover {
+  color: #fff;
+  border: 1px solid transparent;
+}
+.primary-btn-white:hover:before {
+  right: -10%;
+  width: 120%;
+  opacity: 0.5;
+  visibility: visible;
+}
+label.checkbox-inline.form-checkbox {
+  color: #041423;
+  font-size: 14px;
+  font-weight: 300;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.bold-tittle {
+  color: #00529c;
+  font-weight: 700;
+  font-size: 20px;
+}
+.bold-link {
+  color: #f6f7f8;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* ============================================================================================
+                  Menu
+============================================================================================ */
+li.nav-item {
+  margin-right: 20px;
+}
+.nav li {
+  color: #041423;
+  font-size: 14px;
+}
+.nav li a {
+  color: #041423;
+}
+.header-area {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+/* ============================================================================================
+                  Hero Section
+============================================================================================ */
+#banner-section {
+  position: relative;
+  background: url(../img/hero-bg.png) bottom no-repeat;
+  background-size: cover;
+}
+.banner-area-content .banner-h2 {
+  color: #041423;
+  font-weight: 800;
+  line-height: 45px;
+  font-size: 35px;
+}
+.banner-area-content .banner-h4 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+/* .banner-area-content {
+  margin-top: -150px;
+} */
+.banner-inline-btn {
+  margin-top: 30px;
+}
+.banner-inline-btn .primary-btn {
+  margin-right: 20px;
+}
+.banner-form {
+  background-color: #fff;
+  border: 1px solid #d9e0e6;
+  padding: 25px;
+  border-radius: 5px;
+  margin-top: 135px;
+}
+.banner-form .form-h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.banner-form .form-h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.form-group .form-checkbox {
+  margin-right: 10px;
+}
+.form-checkbox input {
+  margin-right: 10px;
+}
+button.btn-full {
+  width: 100%;
+}
+/* ============================================================================================
+                  About Section
+============================================================================================ */
+#about-section {
+  padding: 100px 0px;
+}
+.about-right-content .about-h2 {
+  margin-top: 25px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.about-right-content .about-h4 {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 40px;
+  font-style: italic;
+}
+.about-right-content .about-p {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7e878f;
+}
+/* ============================================================================================
+                  Pricing Section
+============================================================================================ */
+#pricing-section {
+  padding: 100px 0px;
+  background-color: #f6f7f8;
+}
+.pricing-left-content .pricing-h2 {
+  margin-top: 25px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.pricing-left-content .pricing-p {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7e878f;
+}
+/* ============================================================================================
+                  Services Section
+============================================================================================ */
+#services-section {
+  padding: 100px 0;
+  background-color: #041423;
+}
+#services-section .services-h2 {
+  margin-top: 25px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #f6f7f8;
+  text-align: center;
+}
+.services-icon-row {
+  margin-top: 50px;
+}
+.services-icon-row2 {
+  margin-top: 25px;
+}
+.services-icon-box {
+  border: 1px solid #f6f7f8;
+  padding: 25px;
+  border-radius: 5px;
+}
+.services-icon-box img {
+}
+.services-icon-box .services-icon-text {
+  color: #f6f7f8;
+  font-size: 16px;
+  margin-top: 15px;
+}
+/* ============================================================================================
+                  Join Section
+============================================================================================ */
+#join-section {
+  padding: 100px 0;
+}
+#join-section .join-h2 {
+  margin-top: 25px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #041423;
+  text-align: center;
+}
+.join-content-box {
+  margin-top: 25px;
+}
+.join-content-box .join-icon-box {
+  border: 1px solid #d9e0e6;
+  padding: 50px 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.join-content-box .join-icon-box .join-icon-text {
+  font-size: 20px;
+  color: #041423;
+  margin-top: 25px;
+}
+/* ============================================================================================
+                  Footer Section
+============================================================================================ */
+#footer-section {
+  padding: 100px 0;
+  background-color: #041423;
+  color: #f6f7f8;
+}
+.footer-item-1-text {
+  margin-top: 25px;
+}
+.footer-item-1-text p {
+  color: #7e878f;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer-item-1-text a {
+  color: #7e878f;
+}
+.footer-item-1-text p:last-child {
+  margin-top: 35px;
+}
+/* Item 2 start */
+.footer-item-2-text,
+.footer-item-3-text,
+.footer-item-4-text {
+  margin-top: 25px;
+}
+.footer-item-2-text a,
+.footer-item-3-text a,
+.footer-item-4-text a {
+  color: #7e878f;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer-logo {
+  height: 30px;
+}
